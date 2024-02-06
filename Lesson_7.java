@@ -32,7 +32,6 @@ public class Lesson_7 {
                 try {
                     sum += Integer.parseInt(array[i][j]);
                 } catch (NumberFormatException e) {
-                    // Если преобразование не удалось, бросаем исключение с деталями
                     throw new MyArrayDataException("Неверные данные в ячейке [" + i + "][" + j + "]");
                 }
             }
