@@ -20,7 +20,6 @@ public class Lesson_7 {
         int strings = 4;
         int columns = 4;
 
-
         if (array.length != strings || array[0].length != columns) {
             throw new MyArraySizeException("Размер массива должен быть 4x4");
         }
