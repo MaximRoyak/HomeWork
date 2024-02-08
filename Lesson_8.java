@@ -38,6 +38,7 @@ class PhoneBook {
         }
     }
 }
+
 public class Lesson_8 {
     public static void main(String[] args) {
         String[] strings = {"Поле", "Река", "Небо", "Класс", "Поле", "Город", "Река", "Лес", "Дорога", "Город",
