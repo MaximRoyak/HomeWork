@@ -70,7 +70,7 @@ public class Lesson_9_2 {
         System.out.println("Средний возраст студентов мужского пола: " + averageAge);
         int currentYear = 2024;
         Collection<Student> draftCandidates = students.stream()
-                .filter(student -> student.getAge() >= 18 && student.getAge() <= 27)
+                .filter(student -> student.getAge() >= 18 && student.getAge() <= 27 && student.gender == Gender.MAN)
                 .collect(Collectors.toList());
         System.out.println("Студенты, которым грозит получение повестки в " + currentYear + " году:");
         draftCandidates.forEach(System.out::println);
