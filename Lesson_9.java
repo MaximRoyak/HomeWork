@@ -40,15 +40,11 @@ public class Lesson_9 {
 
         List<String> collect = new ArrayList<>(Arrays.asList("f10", "f15", "f2", "f4", "f4"));
 
-        // Сортировка коллекции по возрастанию с использованием Stream API
         String[] sortedArray = collect.stream()
                 .sorted()
                 .toArray(String[]::new);
-
-        // Объединение отсортированного массива в одну строку
         String result = String.join(", ", sortedArray);
 
-        // Вывод отсортированной строки
         System.out.println("Отсортированный массив: " + result);
 
         Scanner scanner = new Scanner(System.in);

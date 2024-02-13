@@ -68,8 +68,6 @@ public class Lesson_9_2 {
                 .average()
                 .orElse(0.0);
         System.out.println("Средний возраст студентов мужского пола: " + averageAge);
-
-        // 2. Кому из студентов грозит получение повестки в этом году
         int currentYear = 2024;
         Collection<Student> draftCandidates = students.stream()
                 .filter(student -> student.getAge() >= 18 && student.getAge() <= 27)
