@@ -61,7 +61,7 @@ public class Lesson_9_2 {
                 new Student("Михаил", 28, Gender.MAN)
         );
 
-        // 1. Средний возраст студентов мужского пола
+
         double averageAge = students.stream()
                 .filter(student -> student.getGender() == Gender.MAN)
                 .mapToInt(Student::getAge)
